@@ -1,0 +1,135 @@
+@import "compass/css3";
+
+
+html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: 'source sans pro';
+    }
+body{
+    background-color:#333;
+    color:azure;
+    font-weight: 600;
+    font-size: 1.4em;
+}
+
+#block{
+    background-image: url("../images/geoPattern.svg");
+    z-index: -99999;
+}
+
+#block2{
+    background-image: url('../images/geoPattern3.1(circ).svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#block3{
+    background-image: url('..//images/textureWhite(wall).png');
+    background-size: cover;
+    color:#333;
+}
+
+
+#intro{
+    background-image:url(..//images/cat_3.0.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+h1, h2, h3, nav {
+    font-family: 'lato';
+} 
+blockquote:before {
+    top: 0;
+    left: 0;
+    font-family: "FontAwesome";
+    content: "\201C";
+}
+
+blockquote:after {
+    top: 0;
+    right: 0;
+    font-family: "FontAwesome";
+    content: "\201D";
+}
+
+blockquote{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    border: none;
+    font-style: italic;
+    color:#333;
+}
+
+
+a:hover{
+    text-transform: uppercase;
+}
+.nav-bar{
+    position: fixed;
+    top:0;
+    margin-top:0;
+    padding-top:0;
+}
+nav{
+    min-height:220px;
+    position: absolute;
+    z-index: 10;
+}
+footer{
+    height:100px;
+    text-align: center;
+    background-image: url('../images/geoPattern2.svg');
+    
+}
+footer a{
+    padding:.2em;
+    color:white;
+    background-color:black;
+}
+
+#quotes{
+
+    background-color:#dedede;
+    overflow-x: visible;
+    width: 100%;
+    margin:80px 0 0 0;
+    min-height: 200px;
+    text-align: center;
+    z-index: -9999;
+    padding-top:5%;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+#intro{
+    min-height: 400px;
+    padding-top:5%;
+    
+}
+
+
+
+#secOne, #secTwo, #secThree{
+    min-height: 500px;
+    background-color:transparent;
+}
+
+
+#block, #block3, #block4, #block5 {
+    opacity: 0;
+}
+
+
+@media screen and (min-width: 480px) {
+    section #intro{margin-bottom: 0;}
+}
