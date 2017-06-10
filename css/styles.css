@@ -7,7 +7,7 @@ html, body {
         padding: 0;
         font-family: 'source sans pro';
     }
-body{
+h3, body{
     background-color:#333;
     color:azure;
     font-weight: 600;
@@ -102,6 +102,11 @@ footer a{
     z-index: -9999;
     padding-top:5%;
 }
+#openModal{
+    color:#333;
+    min-height: 200px;
+    
+}
 
 .clearfix:after {
     content: ".";
@@ -119,6 +124,13 @@ footer a{
 
 
 
+.jumbo-content{
+    background-image: url(../images/cat_3.0.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 300px;
+}
+
 #secOne, #secTwo, #secThree{
     min-height: 500px;
     background-color:transparent;
@@ -129,6 +141,13 @@ footer a{
     opacity: 0;
 }
 
+#testimonials-wrapper{
+    top: 100px;
+}
+.testimonial{
+    padding: 40px;
+    text-align: center;
+}
 
 @media screen and (min-width: 480px) {
     section #intro{margin-bottom: 0;}

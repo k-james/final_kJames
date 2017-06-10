@@ -5,9 +5,11 @@
     <title>katelinJames_final</title>
     <link rel="stylesheet" href="css/cassini-grid.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.css">
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="css/cassiniTooltip.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/cassiniJumbotron.css">
+    <link rel="stylesheet" href="css/modal.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200i,400,600,700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato|Source+Sans+Pro:200i,400,600,700,900" rel="stylesheet">
     <script src="https://use.fontawesome.com/f85a21c630.js"></script>
@@ -41,7 +43,7 @@
     <div class="one-col-grid">
     <nav id="responsive-nav" class="grid-element nav-bar clearfix">
             <ul>
-                <a href="index.html" title="home"><img class="responsive-logo" src="images/command.svg" alt=""> </a>
+                <a href="index1.html" title="home"><img class="responsive-logo" src="images/command.svg" alt=""> </a>
                  <li class="dropdown">
             <a href="#" class="dropbtn">trends</a>
             <ul class="dropdown-content">
@@ -59,25 +61,39 @@
         </nav>
         <script>
             $(function () {
-                   stickyNav();
+                   responsiveNav();
             });
-             
         </script>
     </div>
 </header>
  
     </div>
-<!-- QUOTES SLIDER -->     
-      <div class="one-col-grid clearfix">
-          <section id="quotes" class="grid-element">
-              <div><blockquote>Technology has infinitely increased the size of our world. We don’t have proper hover boards, yet, but digitally speaking we can now go anywhere without our feet leaving the floor.</blockquote></div>
-              <div><blockquote>Color is no longer just one component of an image; it’s become the star.</blockquote></div>
-              <div><blockquote>Challenger brands are adopting the aesthetics of photojournalism to connect with younger consumers and bring a raw, spontaneous edge to their storytelling.</blockquote></div>
-              <div><blockquote>As the debates around gender politics intensify, we are seeing the emergency of a new type of woman who is ready to reclaim the battleground.</blockquote></div>
-              <div><blockquote>The ever-increasing circulation of people, goods and information around the world is having a transformative effect on society and has the potential to change the way we see ourselves</blockquote></div>
-              <div><blockquote>Increasingly savvy consumer are shunning the overly curated approach in favor of a looser, more irreverent touch- and big brands are following suit.</blockquote></div>
-          </section>
-      </div>
+<!-- QUOTES SLIDER -->
+<div id="testimonials-wrapper">
+  <div class="testimonials-inner-wrapper">    
+    <div class="testimonials-overflow-wrapper">
+       <div class="testimonial">
+         <ul>
+            <li><!-- customer picture --></li>
+            <li>Technology has infinitely increased the size of our world. We don’t have proper hover boards, yet, but digitally speaking we can now go anywhere without our feet leaving the floor.</li>
+         </ul>
+    </div>
+           <div class="testimonial">
+             <ul>
+                <li><!-- customer picture --></li>
+                <li>Color is no longer just one component of an image; it’s become the star.</li>
+             </ul>
+        </div>
+           <div class="testimonial">
+             <ul>
+                <li><!-- customer picture --></li>
+                <li>Challenger brands are adopting the aesthetics of photojournalism to connect with younger consumers and bring a raw, spontaneous edge to their storytelling.</li>
+             </ul>
+        </div>
+    </div>
+  </div>
+</div> 
+     
 <!--INTRO--> 
          
      <div>
@@ -155,6 +171,16 @@
                 <section class="grid-element">
                    <h1>contact</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat repudiandae aperiam dignissimos temporibus labore, perspiciatis ipsam dolore reprehenderit, sit nulla sint consequatur tenetur laudantium magni! Natus, eligendi. Quibusdam, debitis, veniam!</p>
+                <div id="Modal_Window">
+                <a href="#openModal"><h3>Open Modal</h3></a>
+                </div>
+                <div id="openModal" class="modalWindow">
+                    <div>
+                         <a href="#" class="close">&times;</a>
+                         <h2>Modal Window</h2>
+                         <p>This is a sample modal window.</p>
+                         </div>
+                </div>
                 </section>
             </div>
         </div>
@@ -177,7 +203,8 @@
             position: "top" 
         });
     })
-</script>         
+</script>
+     
 <script>
     $("#quotes").slick({
         dots: false,
